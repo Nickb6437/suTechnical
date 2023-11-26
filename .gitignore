@@ -1,0 +1,15 @@
+# Folder config file
+[Dd]esktop.ini
+
+# Log files
+*.log
+
+# Config File
+config.php
+
+# npm package files
+package-lock.json
+node_modules/*
+
+# Public files
+dist/*

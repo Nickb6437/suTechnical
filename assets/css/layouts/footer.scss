@@ -1,0 +1,7 @@
+.su-footer {
+  @apply bg-zinc-800 border-t-2 border-accent;
+
+  .su-footer__container {
+    @apply container mx-auto py-8 px-4 lg:px-8 flex justify-center items-center text-gray-400;
+  }
+}

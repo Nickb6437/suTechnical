@@ -1,0 +1,29 @@
+.su-user-list {
+  @apply overflow-x-auto lg:flex gap-8;
+}
+
+.su-user-list__table {
+  @apply w-full max-w-3xl mx-auto;
+
+  .su-user-list__table-head-row {
+    @apply border-b border-gray-400;
+  }
+
+  .su-user-list__table-body-row:not(:first-of-type) {
+    @apply border-t border-gray-200;
+  }
+
+  .su-user-list__table-body-row:last-of-type {
+    @apply border-b border-gray-200;
+  }
+}
+
+.su-user-list__table-head-row > th{
+  @apply py-2 px-4 text-left font-bold;
+}
+
+.su-user-list__table-body-row > td,
+.su-user-list__table-body-row__orders > td {
+  @apply py-2 px-4;
+}
+

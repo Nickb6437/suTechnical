@@ -1,0 +1,39 @@
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+@import "./layouts/contact.scss";
+@import "./layouts/users.scss";
+
+@import "./parts/forms.scss";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --clr-su-primary: 124 30 29;
+    --clr-su-secondary: 4 118 111;
+    --clr-su-tertiary: 141 103 177;
+    --clr-su-accent: 168 125 66;
+    --clr-su-greyDark: 52 54 51;
+    --header-height: 128px;
+    --header-height-mobile: 88px;
+    --footer-height: 90px;
+  }
+}
+
+body {
+  @apply font-sans text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-900;
+
+}
+
+main {
+  @apply container px-4 lg:px-8 py-8 lg:py-16 mx-auto;
+  min-height: calc(100vh - var(--header-height-mobile) - var(--footer-height));
+
+  @screen lg {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  }
+}

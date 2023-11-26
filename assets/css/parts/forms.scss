@@ -1,0 +1,22 @@
+.su-contact-form {
+  @apply max-w-screen-md mx-auto px-4 py-8;
+
+  .su-contact-form__feildset {
+    @apply flex flex-col gap-4;
+
+    .su-contact-form__feildset-feild {
+      @apply flex flex-col gap-1;
+    }
+    .su-contact-form__feildset-feild > label {
+      @apply text-gray-600 dark:text-gray-300 font-medium text-sm;
+    }
+    .su-contact-form__feildset-feild > input,
+    .su-contact-form__feildset-feild > textarea {
+      @apply py-2 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent;
+    }
+  }
+
+  .su-contact-form__submit {
+    @apply py-3 px-4 text-white font-bold text-sm bg-accent rounded hover:text-accent hover:text-base hover:bg-white transition-all duration-300 ease-in-out border border-accent block mt-3 ml-auto;
+  }
+}

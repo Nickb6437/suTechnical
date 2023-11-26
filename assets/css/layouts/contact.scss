@@ -1,0 +1,11 @@
+.su-contact {
+  @apply flex flex-col lg:flex-row gap-8 justify-between items-center;
+
+  .su-contact__toast {
+    @apply shadow flex justify-between items-stretch;
+
+    .su-contact__toast-icon {
+      @apply p-3 grid place-content-center;
+    }
+  }
+}
